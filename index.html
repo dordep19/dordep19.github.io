@@ -1,11 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<title>Dorde Popovic</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<html>
+<head>
+	<title>Dorde Popovic</title>
+	<style>
+        html {
+            box-sizing: border-box;
+        }
+		body {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            background-color: #F8F0E3;
+		}
+        h3 {
+            color: #800000;
+            margin: 0px;
+            padding: 0px;
+        }
+        h2 {
+            color: #800000;
+            margin: 0px;
+            padding: 10px 10px 0px 10px;
+        }
+		.container {
+			display: inline-block;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 5px;
+			margin: 0 auto;
+			max-width: 1000px;
+			padding: 0 20px;
+			box-sizing: border-box;
+		}
+		.left-column {
+            float: left;
+			width: 300px;
+			box-sizing: border-box;
+            font-size: 18px;
+		}
+		.right-column {
+			width: calc(100% - 250px);
+			margin-left: 310px;
+			box-sizing: border-box;
+		}
+		.section {
+            margin-bottom: 10px;
+            background-color: #F8F0E3;
+            border: 1px #ccc solid;
+            text-align: left;
+            width: 100%;
+            height: 200px;
+            box-sizing: border-box;
+            max-height: 100%;
+            overflow: auto;
+        }
+		.section-image {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+		.section-image img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+        .section-affiliation {
+            height: 450px;
+            overflow: auto;
+        }
+        .section-news {
+            height: 370px;
+            overflow: auto;
+        }
+        .section-about {
+            height: 230px;
+            overflow: auto;
+        }
+        .section-projects {
+            height: 360px;
+            overflow: auto;
+        }
+        .section-honors {
+            height: 310px;
+            overflow: auto;
+        }
+        .section-activities {
+            height: 150px;
+            overflow: auto;
+        }
+        .section-publications {
+            height: 180px;
+            overflow: auto;
+        }
+		header {
+			font-size: 36px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+        ul {
+            padding-top: 10px;
+        }
+        li { 
+           margin-bottom: 15px;  
+        }
+        a:link, a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #800000;
+        }
+        p {
+            padding: 10px;
+        }
+        .project {
+            padding: 20px;
+            width: 30%;
+            float: left;
+            margin: 0px 0px 0px 10px;
+        }
+        figcaption {
+            text-align: center;
+        }
+        .image-box {
+            display: inline-block;
+            position: relative;
+            width: 340px;
+            height: 250px;
+            margin: 10px 0px 0px 0px;
+        }
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .caption {
+            position: relative;
+            text-align: center;
+            padding: 5px;
+        }
+        @media screen and (max-width: 800px) {
+            .left-column, .right-column {
+                width: 100%;
+                float: none;
+                margin-left: auto;
+            }
+
+            .section {
+                margin-bottom: 20px;
+            }
+        }
+	</style>
+</head>
 <body>
+	<header><h3><b>Dorde Popovic</b></h3></header>
+	<div class="container">
+		<div class="left-column">
+			<div class="section section-image">
+				<img src="./images/headshot.jpg" alt="headshot">
+			</div>
+			<div class="section">
+				<h2>Contact</h2>
+                <p><b>Email:</b> dpopovic@hbku.edu.qa</p>
+                <a href="mailto:dpopovic@hbku.edu.qa" target="_blank"><img src="./images/icon-mail.png" style="width: 40px; padding-left: 10px; "></a>
+                <a href="https://scholar.google.com/citations?user=mBtJH9sAAAAJ&hl=en" target="_blank"><img src="./images/icon-gscholar.png" style="width: 40px;"></a>
+                <a href="https://www.linkedin.com/in/%C4%91or%C4%91e-popovi%C4%87-785488136/" target="_blank"><img src="./images/icon-linkedin.png" style="width: 40px;"></a>
+                <a href="https://twitter.com/dordep19" target="_blank"><img src="./images/icon-twitter.png" style="width: 40px;"></a>
+                <a href="./files/cv.pdf" target="_blank"><img src="./images/icon-cv.png" style="width: 40px;"></a>
+			</div>
+			<div class="section section-affiliation">
+				<h2>Affiliation</h2>
+				<p>
+                    <b>2022-present</b>
+                    <br>
+                    <img src="./images/icon-qcri.png" style="width: 100%; padding-top: 5%; padding-bottom: 15%;">
+                    <br>
+                    <b>2018-2022</b>
+                    <br>
+                    <img src="./images/icon-cmu-big.png" style="width: 70%; padding-top: 5%; padding-bottom: 5%;">
+                </p>
+			</div>
+            <div class="section section-news">
+				<h2>News</h2>
+				<ul>
+                    <li><a href="https://www.qatar.cmu.edu/news/cmu-q-graduate-named-runner-up-for-school-of-computer-science-award/" target="_blank">CMU-Q graduate named runner-up for School of Computer Science award</a></li>
+                    <li><a href="https://www.qatar.cmu.edu/news/student-research-into-antibiotic-resistance-wins-carnegie-mellon-symposium/" target="_blank">Student research into antibiotic resistance wins Carnegie Mellon symposium</a></li>
+                    <li><a href="https://www.qatar.cmu.edu/news/cmu-q-announces-scholars-for-class-of-2022/" target="_blank">CMU-Q announces scholars for Class of 2022</a></li>
+                    <li><a href="https://www.qatar.cmu.edu/news/igem-creates-fast-inexpensive-screening-kit-for-genetic-disease-carriers/" target="_blank">CMU-Q team creates fast, inexpensive screening kit for genetic disease carriers</a></li>
+                </ul>
+			</div>
+		</div>
+		<div class="right-column">
+			<div class="section section-about">
+				<h2>About me</h2>
+				<p>I am a research assistant in the <a href="https://cs.qcri.org/" target="_blank"><b>Cyber Security Research Group</b></a> at the <a href="https://www.hbku.edu.qa/en/qcri" target="_blank"><b>Qatar Computing Research Institute</b></a>. I received my BSc in <a href="https://www.cs.cmu.edu/" target="_blank"><b>Computer Science</b></a> from Carnegie Mellon University.<br><br>My research interests include Trojan backdoor attacks and defenses, robust machine learning, federated learning, and the ethics of AI.</p>
+			</div>
+            <div class="section section-projects">
+                <h2>Projects</h2>
+                <div class="image-box">
+                  <a href="https://ieeexplore.ieee.org/document/10005497" target="_blank"><img src="./images/highlights-federated-learning.gif" alt="fedteams" title="Source: https://medium.com/secure-and-private-ai-writing-challenge/federated-learning-an-introduction-93bc0167f916"></a>
+                  <div class="caption"><a href="https://ieeexplore.ieee.org/document/10005497" target="_blank"><b>FedTeams</b></a></div>
+                </div>
+                <div class="image-box">
+                  <a href="https://2019.igem.org/Team:CMUQ" target="_blank"><img src="./images/highlight-caspre.gif" alt="caspre"></a>
+                  <div class="caption"><a href="https://2019.igem.org/Team:CMUQ" target="_blank"><b>CASPRE</b></a></div>
+                </div>
+            </div>
+			<div class="section section-honors">
+                <h2>Honors and Awards</h2>
+				<ul>
+                    <li><b>Andrew Carnegie Society Scholar Award</b></li>
+                    <li><b>Outstanding Academic Achievement Award</b> <i>(1<sup>st</sup> in class)</i></li>
+                    <li><b>Allen Newell Award for Excellence in Undergraduate Research</b> <i>(Runner-up)</i></li>
+                    <li><b>Best Project Award at Meeting of the Minds Research Symposium</b> <i>(2<sup>nd</sup> place)</i></li>
+                    <li><b>Best Project Award at Meeting of the Minds Research Symposium</b> <i>(3<sup>rd</sup> place)</i></li>
+                    <li><b>Qatar Campus Scholar Award</b></li>
 
-    <img src="./images/headshot.jpg" alt="headshot" style="width:100%">
-
+                </ul>
+            </div>
+            <div class="section section-activities">
+                <h2>Conference Activities</h2>
+				<ul>
+                    <li>Reviewer, IEEE Transaction on Dependable and Secure Computing (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858" target="_blank"><b>TDSC 2023</b></a>)</li>
+                    <li>Reviewer, ACM International World Wide Web Conference (<a href="https://dl.acm.org/conference/www" target="_blank"><b>WWW 2023</b></a>)</li>
+                </ul>
+            </div>
+            <div class="section section-publications">
+                <h2>Publications</h2>
+                <ul>
+                    <li><b><a href="https://ieeexplore.ieee.org/document/10005497" target="_blank">FedTeams: Towards Trust-Based and Resource-Aware Federated Learning</a>,</b><br> Dorde Popovic, Hend K. Gedawy and Khaled A. Harras <br><i>In IEEE International Conference on Cloud Computing Technology and Science (<b>CloudCom 2022)</b></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
