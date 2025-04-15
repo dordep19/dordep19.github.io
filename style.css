@@ -74,9 +74,6 @@ a:hover {
   color: #800000;
 }
 
-/*--- Revised Project Cards ---*/
-
-/* Let grid adapt to available space and align items from the top */
 .project-cols {
   margin: 10px;
   display: grid;
@@ -85,7 +82,6 @@ a:hover {
   align-items: start;
 }
 
-/* Stack image and caption vertically in each project card */
 .image-box {
   display: flex;
   flex-direction: column;
@@ -93,15 +89,14 @@ a:hover {
   justify-content: flex-start;
 }
 
-/* Make the image larger while preserving its aspect ratio */
 .image-box img {
-  max-width: 90%;
-  height: auto;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
   display: block;
   margin-bottom: 10px;
 }
 
-/* Ensure the caption is below the image and wraps without overlapping */
 .caption {
   display: block;
   text-align: center;
@@ -111,7 +106,6 @@ a:hover {
   white-space: normal;
 }
 
-/*--- Responsive adjustments ---*/
 @media screen and (max-width: 800px) {
   .left-column,
   .right-column {
